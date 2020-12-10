@@ -1,23 +1,21 @@
-import logo from './logo.svg';
-import './App.css';
+import "./App.css";
+import Services from "./services/Services";
+import { useState } from "react";
 
 function App() {
+
+  let [city, setCity] = useState('Lahore')
+  let [search, setSearch] = useState(false)
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="app">
+     <h1>MY Weather App</h1>
+      <br/>
+      <input type="text" placeholder={city} onChange={(e)=>setCity(e.target.value)} />
+      <button onClick={()=>setSearch(!search)} >Search</button>
+
+
+      <Services city={city} search={search} />
+
     </div>
   );
 }
