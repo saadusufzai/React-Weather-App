@@ -2,7 +2,7 @@ import { useEffect, useState } from "react";
 
 const Services = ({city, search}) => {
 
-    let [data, setData] = useState()
+   
     
 
   useEffect(() => {
