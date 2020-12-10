@@ -3,8 +3,7 @@ import { useEffect, useState } from "react";
 const Services = ({city, search}) => {
 
     let [data, setData] = useState()
-    
-
+ 
   useEffect(() => {
     fetch(
       `http://api.openweathermap.org/data/2.5/weather?q=${city}&appid=fb1064e9ddd60a320fd55dd15aecb9ab`
