@@ -34,7 +34,7 @@ jobs:
        
 # will run build
     - name: Yarn Build
-      run:  yarn build
+      run:  yarn CI=false build
         
         
     - name: installing Surge
