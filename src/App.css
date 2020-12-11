@@ -9,11 +9,14 @@ ul li{
 input[type=text], button {
   padding: 5px 10px;
   border-radius: 5px;
+  border: 5px solid rgb(1, 175, 255);
   margin-left: 5px;
+  background: #fff;
+  cursor: pointer;
 }
 
 .box{
-  border: 2px solid rgb(1, 175, 255);
+  border: 15px solid rgb(1, 175, 255);
   border-radius: 30px;
   width: 50%;
   margin: 0 auto;

@@ -8,7 +8,7 @@ function App() {
   let [search, setSearch] = useState(false)
   return (
     <div className="app">
-     <h1>MY Weather App</h1>
+     <h1 style={{color:'white', backgroundColor:'blue'}}  >MY Weather App</h1>
       <br/>
       <input type="text" placeholder={city} onChange={(e)=>setCity(e.target.value)} />
       <button onClick={()=>setSearch(!search)} >Search</button>
